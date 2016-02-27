@@ -11,7 +11,7 @@ npm test to run unit-test
 
 # Start fresh
 
-meteor create --release 1.3-modules-beta.4 sample-app
+meteor create --release 1.3-modules-beta.8 sample-app
 cd sample-app
 rm -rf *
 
@@ -19,7 +19,7 @@ npm init -f
 
 npm i --save react react-dom
 
-meteor add kadira:flow-router
+meteor add kadira:flow-router reactive-dict audit-argument-checks check
 
 npm i --save react-mounter
 

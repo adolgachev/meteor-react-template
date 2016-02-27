@@ -1,8 +1,9 @@
-import loadMethodStubs from './configs/method_stubs';
-import {initContext} from './configs/context';
-import {initRoutes} from './configs/routes.jsx';
-import actions from './actions';
+import {createApp} from 'mantra-core';
+import initContext from './configs/context';
 // (material-ui) import injectTapEventPlugin from 'react-tap-event-plugin';
+
+// modules
+import coreModule from './modules/core';
 
 // Needed for onTouchTap
 // Can go away when react 1.0 release
@@ -10,6 +11,10 @@ import actions from './actions';
 // https://github.com/zilverline/react-tap-event-plugin
 // (material-ui) injectTapEventPlugin();
 
-loadMethodStubs();
+// init context
 const context = initContext();
-initRoutes(context, actions);
+
+// create app
+const app = createApp(context);
+app.loadModule(coreModule);
+app.init();
