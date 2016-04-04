@@ -1,7 +1,7 @@
 const { describe, it } = global;
 import {expect} from 'chai';
 import {shallow} from 'enzyme';
-import MainLayout from '../index.jsx';
+import MainLayout from '../index';
 
 describe('components.layouts.main', () => {
 

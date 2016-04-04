@@ -11,7 +11,7 @@ npm test to run unit-test
 
 # Start fresh
 
-meteor create --release 1.3-modules-beta.8 sample-app
+meteor create sample-app
 cd sample-app
 rm -rf *
 

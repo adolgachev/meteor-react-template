@@ -1,4 +1,4 @@
-import MainLayout from '../components/main-layout.jsx';
+import MainLayout from '../components/main-layout';
 import {useDeps, composeWithTracker, composeAll} from 'mantra-core';
 
 export const composer = ({context, clearErrors}, onData) => {
